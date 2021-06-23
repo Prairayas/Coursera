@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Floatind element</title>
+    </head>
+    <style>
+        a:hover{
+            background-color: #2980B9;
+            color: white;
+        }
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div {
+            background-color: #D4E6F1;
+        }
+        p {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            float: left;
+            margin-right: 10px;
+        }
+
+        #p1{
+            background-color:#F9E79F;
+            width: 100px;
+            height: 100px;
+        }
+        #p2{
+            background-color:#A2D9CE ;
+        }
+        #p3{
+            background-color:#E6B0AA;
+            clear:both;
+        }
+        #p4{
+            background-color:#F08080 ;
+        }
+        section{
+            clear: both;
+            /* tell that nothing on the left of it */
+        }
+    </style>
+    <body>
+        Back to previous Page --> <a href="positioning_element_by_floating.html">page 1</a>
+        <h1>Two Column Element</h1>
+        <div class="p2">
+            <p id="p1">Find that perfect color with our color picker and discover beautiful color harmonies, 
+                tints, shades and tones; input Hex color codes, RGB and HSL values, and generate HTML, 
+                CSS and SCSS styles.</p>
+            <p id="p2">Looking for some already great color combinations? Our color chart features 
+                flat design colors, Google's Material design scheme and the classic web safe color palette, 
+                all with Hex color codes.</p>
+            <section>This is regular content continuing after the paragraph boxes.</section>
+        </div>
+       
+    </body>
+</html>
