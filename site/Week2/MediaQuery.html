@@ -5,9 +5,60 @@
         <title>Media Queries</title>
     </head>
     <style>
-        
+        a:hover {
+            background-color:#6C3483 ;
+            color:#F5EEF8;
+        }
+        * {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }   
+        h1 {
+            margin-bottom: 10px;
+        }
+        p {
+            border: 1px solid black;
+            margin-bottom: 15px;
+        }
+        #p1 {
+            background-color: #5499C7;
+            width: 300px;
+            height: 300px;
+        }
+        #p2 {
+            background-color:#E67E22 ;
+            width: 50px;
+            height: 50px;
+        }
+        /*************** Large devices only ***************/
+        /* ถ้าน้อยกว่า600จะเป็นแบบ เดิม(บน) */
+        @media (min-width:700px) {/*If it more than 600px, it will follow this content*/ 
+            #p1 {
+            width: 80%;
+            }
+            #p2 {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        /*************** Medium devices only ***************/
+        /* between 492 and 699, it will follow this content. */
+        @media (min-width:492px) and (max-width:699px){
+            #p1 {
+            width: 50%;
+            }
+            #p2 {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        /* If it is out of both media, it will follow the first define */
     </style>
     <body>
-        
+        Back to Previous Chapter --> <a href="RelativeAndAbsoluteElementPositioning.html">Positioning Element</a>
+        <h1>Media Queries</h1>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <br>
+        Next Chapter --> <a href="Responsive_Layout.html">Responsive Layout</a>
     </body>
 </html>

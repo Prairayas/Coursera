@@ -1,4 +1,10 @@
 #bg {
     width: 500px;
-    height: 50px;
+    height: 500px;
+    background-color: #D7BDE2 ;
+    background-image: url("https://theminimalists.co/wp-content/uploads/2020/12/16080003835fd8237f5f142-scaled.jpeg")
+    /* no-repeat left center #D7BDE2 */;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: left center;
 }

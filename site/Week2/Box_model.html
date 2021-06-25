@@ -6,13 +6,54 @@
     </head>
     <style>
         a:hover {
-            background-color: #FDBEE1;
-            color:#57454F;
+            background-color:cadetblue ;
+            color:snow;
         }
-
+        body{
+            margin: 0;
+            padding: 0; /* ถ้า moveขึ้นไปอยู่ใน*{margin: 0;
+                                            padding: 0;}  
+                                            มันจะทุกตัวชิดขอบหมดเลย
+                                            เพราะ* มันดูทุกelement*/
+            background-color: #E9E6C6;
+            box-sizing: border-box;
+        }
+        #box{
+            background-color: #2E3E2E;
+            padding: 15px;
+            border: 10px solid rgb(139, 50, 50);
+            margin-top: 20px;
+            /* margin: 40px; */
+            width: 300px;
+            height: 80px;
+            overflow: auto;   /* มี scroll หรือ ใส่ให้เห็นเป็น scroll ได้เลย */
+            /* box-sizing: border-box; จะเท่ากับwidthที่เซ็ตไว้ */
+            /* jump back to the content box when remove the box-sizing out */
+        }
+        #content  {
+            background-color: #99E89F;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        /* margin top bottom จะอิงตามตัวมากกว่าไม่เหมือนแบบleft right */
     </style>
     <body>
         Go to previous Chapter --> <a href="StylingText.html">Styling text</a>
-
+        <h1 style="font-family:Verdana, Geneva, Tahoma; color: #57454F ;">Box Model</h1>
+        <section>
+            <div id="box">
+                <div id="content">Find that perfect color with our color picker and discover beautiful color harmonies, 
+                    tints, shades and tones; input Hex color codes, RGB and HSL values, and generate HTML, 
+                    CSS and SCSS styles. Looking for some already great color combinations? Our color chart features 
+                    flat design colors, Google's Material design scheme and the classic web safe color palette, 
+                    all with Hex color codes.
+                </div>
+            </div>
+        </section>
+        <section>
+            <hr>
+            Next Chapter <a href="background_property.html">Background Property</a>
+        </section>
     </body>
 </html>

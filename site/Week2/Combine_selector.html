@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Combine Selector</title>
+        <!-- Style CSS part -->
+        <style>
+            /* ELELMENT WITH CLASS BEFORE */
+            /* All h1 elements */
+            h1 {
+                color:rgb(131, 46, 32);
+                opacity: 0.7;
+                font-style: oblique;
+                text-align:center;
+            }
+            /* All with class mainpoint elements */
+            .mainpoint {
+                font-size: 20px;
+                font-style: italic;
+            }
+            /* All with class highlight element */
+            p.highlight {
+                color:teal;
+                background-color:whitesmoke;
+                font-style:italic;
+            }
+            /* All the element with class 'highlight' as well as with class main point */
+            .highlight.mainpoint {
+                color:white;
+                font-size: 32px;
+                font-weight: lighter;
+                font-style: oblique;
+                text-align: center;
+                opacity: 0.6;
+                background-color: rgb(131, 46, 32);
+            }
+
+            /* CHILD SELECTOR BEFORE */
+            /* Any article element which is a direct child of a section element
+            i.e., any article element whose immediate parent is a section element. */
+            section > article {
+                color:royalblue;
+                font-size: 24px;
+            }
+            /* Any h2 element which is a direct child of a section element i.e.,
+            any h2 elememt whose immediate parent is a section element */
+            section h2 {
+                color:slateblue;
+            }
+
+            /* DESCENDANT SELECTOR */
+            /* All li element that are inside section */
+            section li {
+                color:rgb(174, 177, 4)
+            }
+        </style>
+    </head>
+    <body>
+        <div>Back to previous CHAPTER <a href="eleClass_and_idSelector.html">Simple Selector</a></div>
+        <h1>ELEMENT WITH CLASS BEFORE</h1>
+        <p class="highlight">THIS "&lt;p&gt;...&lt;/p&gt;" WITH CLASS = highlight</h2>
+        <p>p with don't have any class.</p>
+        <div class="highlight mainpoint">This is the main point of the entire article</div>
+        <hr>
+
+        <h1>CHILD SELECTOR BEFORE</h1>
+        <section>
+            <h2>Subheading1</h2>
+            <div>
+                <article>
+                    Article which inside DIV which is inside SECTION
+                </article>
+            </div>
+        </section>
+        <section>
+                <article>
+                    Article as a DIRECT child of SECTION.
+                </article>
+        </section>
+        <h2>Subheading2</h2><hr>
+
+        <h1>DESCENDANT SELECTOR</h1>
+        <section>
+            Table of content (This is the li inside section)
+            <ul>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+            </ul>
+        </section>
+        <article>
+            Shopping list
+            <ul>
+                <li>CHOCO</li>
+                <li>BANANA</li>
+                <li>ORANGE</li>
+            </ul>
+        </article>
+        NEXT CHAPTER --> <a href="pseudoClass_selector.html">Pseudo Class Selector</a>
+        
+    </body>
+    
+</html>

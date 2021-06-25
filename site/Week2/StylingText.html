@@ -4,4 +4,47 @@
         <meta charset="utf-8">
         <title>Styling Text</title>
     </head>
+    <style>
+        a:hover  {
+            background-color: slateblue;
+            color: snow;
+        }
+        body {
+            font-size: 120%;
+        }
+        /* Font family 
+        - Serif = ตัวที่มันจะมีขีดห้อยๆตามตัวหนังสือเหมือนหยดน้ำ
+        - Sans-Serif = ตัวหนังสือตัวตรงธรรมดา  */
+        .style {
+            font-family: monospace;
+            color: #c84557;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            text-transform: uppercase; /* all uppercase */
+            text-align: center;
+        }
+        
+    </style>
+   
+   <body>
+        <div>Back to Previous Chapter --> <a href="conflict_resolution.html">Conflict Resolutiom</a></div>
+        <h1>Styling Text</h1>
+        <section>
+            <p class="style">Get HTML color codes, Hex color codes, RGB and HSL values with our color picker,
+                color chart and HTML color names. Let's go!</p>
+        </section>
+        <section>
+            <h2>Font size before HTML</h2>
+            <div>Regular Text
+                <!-- 2em = 200% -->
+                <div style="font-size: 2em;">2 em text <!-- Also receive 120% of body declaration by twice of them -->
+                    <div style="font-size: 2em;">4 em text <!-- only 2 of 2 from above-->
+                        <div style="font-size: 0.5em;">2 em again!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        Next Chapter --> <a href="Box_model.html">Box Model</a>
+    </body>
 </html>

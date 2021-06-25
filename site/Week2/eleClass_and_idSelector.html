@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Selector</title>
+        <!-- Style CSS part -->
+        <style>
+            /* All p elements */
+            p {
+                color:blueviolet;
+                font-size: 20px;
+            }
+            /* All h2 elements */
+            h2, h3, .blue {
+                color:rgb(64, 98, 192);
+                font-size: 20px;
+                text-align: center;
+            }
+            /* All with class highlight element */
+            .highlight {
+                font-size: 18px;
+                font-style:normal;
+                font-weight: bold;
+                background-color: burlywood;
+                opacity: 0.6;
+            }
+            /* Element with id mainpoint */
+            #name {
+                font-size: 32px;
+                font-weight: lighter;
+                font-style: oblique;
+                text-align: center;
+                opacity: 0.6;
+                background-color: rgb(150, 178, 230);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="name">(id)Anatomy of CSS rule</h1>
+        <h2>(h2) Subheading1</h2>
+        <p class="highlight">(highlight) CSS saves time − You can write CSS once and then reuse same sheet in multiple HTML pages. You can define a style for each HTML element and apply it to as many Web pages as you want.</p>
+        <div>Paragraph with attribute class <span class="highlight">(highlight)"Highlight"</span></div>
+        
+        <h2>(h2) Subheading2</h2>
+        <p>(p) Pages load faster − If you are using CSS, you do not need to write HTML tag attributes every time. Just write one CSS rule of a tag and apply it to all the occurrences of that tag. So less code means faster download times.</p>
+        <div>Paragraph with attribute id <p>"name"(p)</p></div>
+
+        <h2>Combine(h2)</h2>
+        <h3>h3 combine(h3)</h3>
+        <p class="blue">Blue class combine(p)</p>
+        NEXT CHAPTER <a href="combine_selector.html">Combine_Selector</a>
+    </body>
+    
+</html>

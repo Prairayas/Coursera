@@ -15,38 +15,32 @@
         div {
             background-color: #D4E6F1;
         }
+        * {
+            box-sizing: border-box;
+            /* margin: 10px; */
+        }
         p {
-            width: 50px;
-            height: 50px;
+            width: 50%;
             border: 1px solid black;
             float: left;
-            margin-right: 10px;
+            /* margin-right: 1px; */
+            padding: 5px; /* เพื่อ เพิ่มระยะระหว่างขอบกับตัวหนังสือ*/
         }
-
         #p1{
             background-color:#F9E79F;
-            width: 100px;
-            height: 100px;
         }
         #p2{
             background-color:#A2D9CE ;
         }
-        #p3{
-            background-color:#E6B0AA;
-            clear:both;
-        }
-        #p4{
-            background-color:#F08080 ;
-        }
         section{
-            clear: both;
+            clear: left;
             /* tell that nothing on the left of it */
         }
     </style>
     <body>
         Back to previous Page --> <a href="positioning_element_by_floating.html">page 1</a>
         <h1>Two Column Element</h1>
-        <div class="p2">
+        <div>
             <p id="p1">Find that perfect color with our color picker and discover beautiful color harmonies, 
                 tints, shades and tones; input Hex color codes, RGB and HSL values, and generate HTML, 
                 CSS and SCSS styles.</p>
@@ -55,6 +49,8 @@
                 all with Hex color codes.</p>
             <section>This is regular content continuing after the paragraph boxes.</section>
         </div>
+        <br>
+        Next Chapter --> <a href="RelativeAndAbsoluteElementPositioning.html">Relative & Absolute Element positioning.</a>
        
     </body>
 </html>

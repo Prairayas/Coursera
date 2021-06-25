@@ -4,14 +4,64 @@
         <meta charset="utf-8">
         <title>Conflict Resolution</title>
         <link rel="stylesheet" href="style_II.css" >
+        <!-- อันนี้เหมือนเอาไฟล์จาก style_II.css มาใส่ตรงนี้ -->
     </head>
     <style>
         a:hover {
             background-color: thistle;
         }
+        p{
+            color: indianred;
+            font-size: 18px;
+            /* Last declafration ทำตามอันนี้จากที่มันไล่จาก top to bottom */
+            /* มันจะอ่านค่าสุดท้ายของ ที่ตรงนี้ว่าตัวหนังสือสีแดง */
+        }
+        /* inheritance part */
+        body div {
+            color:darkslateblue;
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* Specificity */
+        header.navigation p {
+            color:red;
+        }
+        span.blueb {
+            color:blue;
+        }
+        span {
+            color:seagreen !important;
+        }
     </style>
     <body>
         Back to previous Chapter --> <a href="style_placement.html">Style Placement</a>
         <h1>Conflict Resolutiom</h1>
+        <h2>Origin</h2>
+        <!-- Which is more than one declared, it will choose the last declaration.-->
+        <!-- Which is different declaration, it will merge tgt.  -->
+        <p>The Rule is Simple: Last declaration wins</p>
+        <p style = "color: darkolivegreen;">IF there is no conflict, Declaration merge into one rule</p>
+    
+        <h2>Inheritance</h2>
+        <div>
+            <h3>Subheading 1</h3>
+            <p style="background-color: white;">
+                Inheritance allows us to write more global style on parents elements and then "fine-tune"
+                the style for some of the child element as needed. Such approach makes writing CSS very efficient.
+            </p>
+            <h3>Subheading 2 (test)</h3>
+            <p style="background-color: white;">Inheritance allows us to write more global style on parents elements and then "fine-tune"
+                the style for some of the child element as needed. Such approach makes writing CSS very efficient.
+            </p>
+        </div>
+
+        <h2>Specificity</h2>
+        <header class="navigation">
+            <span class="blueb">Hi, this is the specificity. </span>
+            <br>จะได้เลือกที่มีscoreมาที่สุดแต่ถ้าในstyleนั้นมี!importantอยู่จะเอาในimportantนั้นมาทำ
+        </header>
+        <br>Next chapter --> <a href="StylingText.html">Styling text</a>
     </body>
+    
 </html>

@@ -12,10 +12,49 @@
         body{
             font-family:Verdana, Geneva, Tahoma, sans-serif;
         }
+        div {
+            background-color: #D4E6F1;
+        }
+        p {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            float: left;
+            margin-right: 10px;
+        }
+
+        #p1{
+            background-color:#F9E79F;
+            width: 100px;
+            height: 100px;
+        }
+        #p2{
+            background-color:#A2D9CE ;
+        }
+        #p3{
+            background-color:#E6B0AA;
+            clear:both;
+        }
+        #p4{
+            background-color:#F08080 ;
+        }
+        section{
+            clear: both;
+            /* tell that nothing on the left of it */
+        }
     </style>
     <body>
         Back to previous Chapter --> <a href="background_property.html">Background Property</a>
         <h1>Floating Element</h1>
-        
+        <div>
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+            <p id="p4"></p>
+            <section>This is regular content continuing after the paragraph boxes.</section>
+        </div>
+        <h1>Two Column Element</h1>
+        <a href="Two_column_element.html">Next page</a>
+       
     </body>
 </html>
