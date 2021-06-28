@@ -1,7 +1,63 @@
-.row {
-    margin: 15px;
+body {
+    font-size: 16px;
+    color: #424949;
+    background-color: #F1948A;
+    font-family: 'Dosis',sans-serif;
 }
-.row>div {
-    border: 2px solid #1ABC9C ;
-    background-color: #D1F2EB;
+#header-nav {
+    background-color: #CCD1D1;
+    border-radius: 0;
+    border:0;
 }
+
+#logo-img2{
+    width: 150px;
+    height: 150px;
+}
+.pull-left
+{
+    float: left;
+}
+
+.navbar-brand {
+    padding-top: 40px;
+}
+.navbar-brand h1{
+    color:#424949 ;
+    font-family: Dosis;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #CCD1D1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 0.75;
+}
+.navbar-brand a:hover, .navbar-brand a:link { 
+    text-decoration: none;
+}
+/* Certification text */
+.navbar-brand p{
+    color: black;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+}
+.navbar-brand p span { /* prize img */
+    vertical-align: center;
+}
+@media (min-width:900px) {
+    .visible-lg, #logo-img{
+        background: url('../image/meringue3.png') no-repeat;
+        width: 150px;
+        height: 155px;
+        margin: 5px 25px 5px -40px;    
+    }
+}
+@media (min-width:768px) and (max-width:899px) {
+    .visible-md{
+        background: none;
+    }
+}
+
+
