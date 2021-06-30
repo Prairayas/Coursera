@@ -29,22 +29,44 @@
                                 <span>Meringue certification</span>
                             </p>
                         </div>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                        data-target=".navbar-collapse" aria-expanded="true"> 
+                        <!-- #collapsable-nav is used for link with content inside toggle  -->
                             <span class="sr-only">Navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-                          </button>
-                
-                        </div>
-                      </div>
-                    </nav>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul id="nav-list" class="nav navbar-nav navbar-right">
+                           <li>
+                               <a href="menu-categories.html">
+                                   <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span><br class="hidden-xs"> Menu</a>
+                             </li>
+                             <li>
+                               <a href="#">
+                                   <!-- glyphicon to choose picture -->
+                                   <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span><br class="hidden-xs"> About</a>
+                             </li>
+                             <li>
+                               <a href="#">
+                                   <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span><br class="hidden-xs"> Awards</a>
+                             </li>
+                             <li id="phone" class="hidden-xs">
+                               <a href="tel:410-602-5008">
+                                   <span>410-602-5008</span></a><div>* We Deliver</div>
+                             </li>
+                        </ul>
+                    </div>      
+                </div>
+            </nav>
         </header>
         
 
 
         <!-- jQueries (Bootstrap JS plugin depend on it) -->
-        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/script.js"></script>
     </body>
