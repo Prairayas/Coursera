@@ -10,11 +10,6 @@ body {
     border:0;
 }
 
-#logo-img2{
-    width: 150px;
-    height: 150px;
-}
-
 .navbar-brand {
     padding-top: 35px;
 }
@@ -70,7 +65,7 @@ body {
         background: url('../image/meringue3.png') no-repeat;
         width: 150px;
         height: 155px;
-        margin: 5px 25px 5px -40px;    
+        margin: 5px 25px 5px -40px; 
     }
 #nav-list {
         margin-top: 10px;
@@ -89,7 +84,7 @@ body {
 #phone {
         margin-top: 5px;
       }
-#phone a { /* Phone number */
+      #phone a { /* Phone number */
         text-align: right;
         padding-bottom: 0;
       }
@@ -106,5 +101,49 @@ body {
         margin-top: -35px;
       }
 /* END HEADER */
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../image/meringue3_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 25px 5px -40px; 
+  }
+  /* End Header */
+}
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  /* คือตัวตั้งให้headสีเทาพอดีกับcertification */
+  .navbar-brand {
+    padding-top: 15px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 15px;
+    font-size: 4.5vw; /* 1vw = 1% of viewport width */
+  }
+
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+}
+#collapsable-nav {
+  font-size: 1.2em; /* 16px(previous size) time 1.2 */
+  }
+#collapsable-nav a span{
+  font-size: 1em;
+  margin-right: 5px;
+  }
+
 
 
