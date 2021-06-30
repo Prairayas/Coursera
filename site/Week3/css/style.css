@@ -14,10 +14,6 @@ body {
     width: 150px;
     height: 150px;
 }
-.pull-left
-{
-    float: left;
-}
 
 .navbar-brand {
     padding-top: 35px;
