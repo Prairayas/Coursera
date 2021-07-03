@@ -144,7 +144,11 @@ body {
   font-size: 1em;
   margin-right: 5px;
   }
-  /* DOne */
+#call-btn > a{
+  display: block;
+  border: white;
+  background-color: white;
+}
 
 
 
